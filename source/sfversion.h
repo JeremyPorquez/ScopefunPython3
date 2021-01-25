@@ -1,5 +1,5 @@
 #define SCOPEFUN_VERSION_MAJOR       "2"
 #define SCOPEFUN_VERSION_MINOR       "0"
-#define SCOPEFUN_VERSION_MICRO       "14"
-#define SCOPEFUN_VERSION_TIMESTAMP   "13:28 14-03-2020"
-#define SCOPEFUN_VERSION_TYPE        "release"
+#define SCOPEFUN_VERSION_MICRO       "1"
+#define SCOPEFUN_VERSION_TIMESTAMP   "17:02 25-01-2021"
+#define SCOPEFUN_VERSION_TYPE        "release version"

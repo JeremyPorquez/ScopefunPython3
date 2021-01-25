@@ -89,10 +89,10 @@ if(SCOPEFUN_MACOSX OR SCOPEFUN_LINUX)
 include(ExternalProject)
 
 if(SCOPEFUN_MACOSX)
-externalproject_add(Python2716
-    PREFIX            ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16
-    BINARY_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/sfBuild${SCOPEFUN_TYPE} 
-    SOURCE_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16
+externalproject_add(Python379
+    PREFIX            ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9
+    BINARY_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/sfBuild${SCOPEFUN_TYPE} 
+    SOURCE_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9
     CONFIGURE_COMMAND sh ../configure --enable-framework --with-pic
     BUILD_COMMAND     make 
     UPDATE_COMMAND    ""
@@ -101,10 +101,10 @@ externalproject_add(Python2716
 endif()
 
 if(SCOPEFUN_LINUX)
-externalproject_add(Python2716
-    PREFIX            ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16
-    BINARY_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/sfBuild${SCOPEFUN_TYPE} 
-    SOURCE_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-2.7.16
+externalproject_add(Python379
+    PREFIX            ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9
+    BINARY_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/sfBuild${SCOPEFUN_TYPE} 
+    SOURCE_DIR        ${CMAKE_SOURCE_DIR}/lib/Python-3.7.9
     CONFIGURE_COMMAND sh ../configure --enable-shared --with-pic
     BUILD_COMMAND     make 
     UPDATE_COMMAND    ""

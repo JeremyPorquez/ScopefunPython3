@@ -53,12 +53,12 @@ target_compile_definitions(sfAPI PRIVATE SCOPEFUN_EXPORT )
 					
 # link sfAPI
 if(SCOPEFUN_MACOSX)
-    target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython2.7.a )
+    target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython3.7m.a )
 else()
    if(SCOPEFUN_LINUX)
-        target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython2.7.a )
+        target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython3.7m.a )
    else()
-	target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython27.a )
+	target_link_libraries(sfAPI ${SCOPEFUN_LIBS} ${SCOPEFUN_LIB_LINK_PYTHON}/libpython37m.a )
    endif()
 endif()
 

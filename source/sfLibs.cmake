@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 
 # include folders
-set(SCOPEFUN_LIB_INCLUDE_PYTHON    "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/Include"    CACHE PATH "include folder for python library" FORCE)
+set(SCOPEFUN_LIB_INCLUDE_PYTHON    "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/Include"    CACHE PATH "include folder for python library" FORCE)
 set(SCOPEFUN_LIB_INCLUDE_USB       "${CMAKE_SOURCE_DIR}/lib/libusb-1.0.22/libusb"     CACHE PATH "include folder for libUsb library" FORCE)
 set(SCOPEFUN_LIB_INCLUDE_USB_EZ    "${CMAKE_SOURCE_DIR}/lib/libusb-1.0.22/examples"   CACHE PATH "include folder for ezusb load library" FORCE)
 set(SCOPEFUN_LIB_INCLUDE_SDL2      "${CMAKE_SOURCE_DIR}/lib/SDL2-2.0.9/include"       CACHE PATH "include fodler for SDL2 library " FORCE)
@@ -29,15 +29,15 @@ endif()
 # include platform specifix folders
 if( NOT (SCOPEFUN_VISUALSTUDIO_X64 OR SCOPEFUN_VISUALSTUDIO_X86) )
 	if(SCOPEFUN_WINDOWS)
-	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/PC" CACHE PATH "include folder for python on windows" FORCE)
+	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/PC" CACHE PATH "include folder for python on windows" FORCE)
 	   set(SCOPEFUN_LIB_INCLUDE_WX_SETUP  "${CMAKE_SOURCE_DIR}/lib/wxWidgets-3.0.4/sfBuild${SCOPEFUN_TYPE}/lib/wx/include/msw-unicode-static-3.0" CACHE PATH "include folder for wx/setup.h" FORCE ) 
 	endif()
 	if(SCOPEFUN_MACOSX)
-	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/sfBuild${SCOPEFUN_TYPE}" CACHE PATH "include folder for python on mac and linux" FORCE)
+	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/sfBuild${SCOPEFUN_TYPE}" CACHE PATH "include folder for python on mac and linux" FORCE)
 	   set(SCOPEFUN_LIB_INCLUDE_WX_SETUP  "${CMAKE_SOURCE_DIR}/lib/wxWidgets-3.0.4/sfBuild${SCOPEFUN_TYPE}/lib/wx/include/osx_cocoa-unicode-static-3.0" CACHE PATH "include folder for wx/setup.h" FORCE )
 	endif()
 	if(SCOPEFUN_LINUX)
-	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/sfBuild${SCOPEFUN_TYPE}" CACHE PATH "include folder for python on mac and linux" FORCE)
+	   set(SCOPEFUN_LIB_INCLUDE_PYTHON_PC "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/sfBuild${SCOPEFUN_TYPE}" CACHE PATH "include folder for python on mac and linux" FORCE)
 	   set(SCOPEFUN_LIB_INCLUDE_WX_SETUP  "${CMAKE_SOURCE_DIR}/lib/wxWidgets-3.0.4/sfBuild${SCOPEFUN_TYPE}/lib/wx/include/gtk3-unicode-static-3.0" CACHE PATH "include folder for wx/setup.h" FORCE ) 
 	endif()
 endif()
@@ -51,9 +51,9 @@ endif()
 
 # link folders platform specific
 if(SCOPEFUN_WINDOWS)
-	set(SCOPEFUN_LIB_LINK_PYTHON  "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/${SCOPEFUN_BITS}" CACHE FILEPATH "link folder for python" FORCE)
+	set(SCOPEFUN_LIB_LINK_PYTHON  "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/${SCOPEFUN_BITS}" CACHE FILEPATH "link folder for python" FORCE)
 else()
-	set(SCOPEFUN_LIB_LINK_PYTHON  "${CMAKE_SOURCE_DIR}/lib/Python-2.7.16/sfBuild${SCOPEFUN_TYPE}" CACHE FILEPATH "link folder for python" FORCE)
+	set(SCOPEFUN_LIB_LINK_PYTHON  "${CMAKE_SOURCE_DIR}/lib/Python-3.7.9/sfBuild${SCOPEFUN_TYPE}" CACHE FILEPATH "link folder for python" FORCE)
 endif()
 
 # libraries
