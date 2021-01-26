@@ -1,0 +1,1 @@
+cmd='sh;../configure;--enable-shared;--with-pic'
