@@ -15,7 +15,7 @@ In comparison to the original distribution files at these locations have been mo
 </ul>
 
 To build the python shareable library:
-1. ```sudo apt get-install -y build-essentials libgtk-3-dev libudev-dev libgl1-mesa-dev```
+1. ```sudo apt get-install -y build-essential libgtk-3-dev libudev-dev libgl1-mesa-dev```
 2. ```mkdir build && cd build```
 3. ```chmod +x ../lib/wxWidgets-3.0.4/src/stc/gen_iface.py```
 4. ```cmake -G "Unix Makefiles" -D CMAKE_BUILD_TYPE="Release" -D CPACK_BINARY_DEB="true" -D CPACK_BINARY_TZ="false" -D CPACK_BINARY_TGZ="false" -D CPACK_BINARY_STGZ="false" ..```
